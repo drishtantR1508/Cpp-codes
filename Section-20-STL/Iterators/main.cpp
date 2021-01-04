@@ -91,7 +91,7 @@ void test4() {
 
     // const reverse iterator over a list
     std::list<std::string> name {"Larry", "Moe", "Curly"};
-    auto it2 =name.crbegin();    // iterator over list of strings  point to Curly
+    auto it2 =name.crbegin();    // iterator over list of strings  point to Curly This is basically giving the address pointer of element at index 0.
     std::cout << *it2 << std::endl;
     it2++;  // point to Moe
     std::cout << *it2 << std::endl;

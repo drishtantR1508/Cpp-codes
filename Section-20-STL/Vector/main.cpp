@@ -42,6 +42,14 @@ void display(const std::vector<T> &vec) {
         std::cout << elem << " ";
     std::cout <<  "]"<< std::endl;
 }
+// template<typename T>
+// void display(std::vector <T> vec){
+//     std::cout  << "[ ";
+//     for (auto elem:vec){
+//         std::cout<<elem<<" ";
+//     }
+//     std::cout<<"]"<<std::endl;
+// }
 
 
 void test1() {
@@ -141,17 +149,27 @@ void test6() {
     
     vec = {1,2,3,4,5,6,7,8,9,10};
     display(vec);
-    vec.erase(vec.begin(), vec.begin() + 2);
+    vec.erase(vec.begin()+1, vec.begin() + 3);
     display(vec);
     
-    vec = {1,2,3,4,5,6,7,8,9,10};
+    vec = {1,2,3,12,15,16,43,4,5,6,7,8,9,10};
     // erase all even numbers
+    // auto it = vec.begin();
+    // while (it != vec.end()) {
+    //     if (*it %2 == 0)
+    //         vec.erase(it);  
+    //     else
+    //         it++;   // only increment if not erased!
+    // }
+
     auto it = vec.begin();
-    while (it != vec.end()) {
-        if (*it %2 == 0)
-            vec.erase(it);  
-        else
-            it++;   // only increment if not erased!
+    while (it != vec.end()){
+        if (*it % 2 != 0){
+            vec.erase(it);
+        }else{
+            it++;
+        }
+
     }
     display(vec);
 }
@@ -264,17 +282,17 @@ void test11() {
 
 int main()  {    
 
-    test1();
-    test2();
-    test3();
-    test4();
-    test5();
+    // test1();
+    // test2();
+    // test3();
+    // test4();
+    // test5();
     test6();
-    test7();
-    test8();
-    test9();
-    test10();
-    test11();
+    // test7();
+    // test8();
+    // test9();
+    // test10();
+    // test11();
     
     return 0;
 }

@@ -46,12 +46,12 @@ void test2() {
     display(arr1);
     display(arr2);
     
-    arr1.fill(0);
+    arr2.fill(0);
     
     display(arr1);
     display(arr2);
     
-    arr1.swap(arr2);
+    arr2.swap(arr1);
     
     display(arr1);
     display(arr2);
@@ -64,7 +64,12 @@ void test3() {
 
     int *ptr = arr1.data();
     std::cout << ptr << std::endl;
-    *ptr = 10000;
+    // *ptr = 10000;
+    
+    display(arr1);
+    for (int i=0;i<arr1.size();i++){
+        *(ptr+i) = *(ptr+i)**(ptr+i);
+    }
     
     display(arr1);
 }
@@ -133,15 +138,15 @@ void test9() {
 
 int main()  {    
 
-    test1();
-    test2();
+    // test1();
+    // test2();
     test3();
-    test4();
-    test5();
-    test6();
-    test7();
-    test8();
-    test9();
+    // test4();
+    // test5();
+    // test6();
+    // test7();
+    // test8();
+    // test9();
     
     return 0;
 }

@@ -29,15 +29,15 @@ int main() {
 //    cout << "s7 is initialized to: " << s7 << endl;
     
 // Comparison
-//    cout << "\nComparison" << "\n------------------------------------------" << endl;
-//    cout << boolalpha;
-//    cout << s1  << " == " << s5 << ": " << (s1 == s5) << endl; 		            // True    Apple == Apple
-//    cout << s1  << " == " << s2 << ": " << (s1 == s2) << endl;	            	// False   Apple != Banana
-//    cout << s1  << " != " << s2 << ": " << (s1 != s2) << endl;		            // True    Apple != Banana
-//    cout << s1  << " < " << s2 << ": " << (s1 < s2) << endl;;		            // True         Apple < Banana
-//    cout << s2  << " > " << s1 << ": " <<(s2 > s1) << endl;		            // True         Banana > Apple
-//    cout << s4  << " < " << s5 << ": " <<(s4 < s5) << endl;		            // False        apple >Apple
-//    cout << s1  << " == " << "Apple" << ": " <<(s1 == "Apple") << endl;;	        // True Apple == Apple
+   cout << "\nComparison" << "\n------------------------------------------" << endl;
+   cout << boolalpha;
+   cout << s1  << " == " << s5 << ": " << (s1 == s5) << endl; 		            // True    Apple == Apple
+   cout << s1  << " == " << s2 << ": " << (s1 == s2) << endl;	            	// False   Apple != Banana
+   cout << s1  << " != " << s2 << ": " << (s1 != s2) << endl;		            // True    Apple != Banana
+   cout << s1  << " < " << s2 << ": " << (s1 < s2) << endl;;		            // True         Apple < Banana
+   cout << s2  << " > " << s1 << ": " <<(s2 > s1) << endl;		            // True         Banana > Apple
+   cout << s4  << " < " << s5 << ": " <<(s4 < s5) << endl;		            // False        apple >Apple
+   cout << s1  << " == " << "Apple" << ": " <<(s1 == "Apple") << endl;;	        // True Apple == Apple
 
 // Assignment 
 //    cout << "\nAssignment" << "\n------------------------------------------" << endl;
