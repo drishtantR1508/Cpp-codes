@@ -39,7 +39,7 @@ template <typename T>
 void display(const std::vector<T> &vec) {
     std::cout << "[ ";
     for (const auto &elem: vec)
-        std::cout << elem << " ";
+        std::cout << elem << ", ";
     std::cout <<  "]"<< std::endl;
 }
 // template<typename T>
@@ -293,6 +293,7 @@ int main()  {
     // test9();
     // test10();
     // test11();
-    
+    std::vector <std::string> ops(3,"");
+    display(ops);
     return 0;
 }
