@@ -4,7 +4,7 @@
 #include <stack>
 #include <vector>
 #include <list>
-
+using namespace std;
 // This function displays a stack of 
 // by repeatedly topping and popping the stack
 // Note theat the stack is passed in by value so we
