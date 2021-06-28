@@ -118,12 +118,12 @@ void string_transform_test() {
 }
 
 int main() {
-    find_test();
-//    count_test();
-//    count_if_test();
-//    replace_test();
-//    all_of_test();
-//    string_transform_test();
+   find_test();
+   count_test();
+   count_if_test();
+   replace_test();
+   all_of_test();
+   string_transform_test();
 
     return 0;
 }

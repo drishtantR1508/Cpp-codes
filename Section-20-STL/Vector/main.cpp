@@ -42,6 +42,7 @@ void display(const std::vector<T> &vec) {
         std::cout << elem << ", ";
     std::cout <<  "]"<< std::endl;
 }
+
 // template<typename T>
 // void display(std::vector <T> vec){
 //     std::cout  << "[ ";
@@ -204,7 +205,7 @@ void test9() {
     // at the end of the container it applied to. It's a special output iterator
     // It's awesome!!!!   and  very efficient
     // There is also a front_inserter we can use with deques and lists
-    // Copy one list to another using an iterator and back_inserter
+    // Copy pone list to another using an iterator and back_inserter
     
     std::cout << "\nTest9  =========================" << std::endl;
     
@@ -242,15 +243,18 @@ void test10() {
     std::cout << "\nTest10  =========================" << std::endl;
     // transform over 2 ranges
     
-    std::vector<int> vec1 {1,2,3,4,5};   
+    std::vector<int> vec1 {1,2,3,4,5,6,7};   
     std::vector<int> vec2 {10,20,30,40,50};
-    std::vector<int> vec3;
+    std::vector<int> vec3 {};
     
-    
+    int a = *(vec1.begin()+6);
+    int b =*(vec2.begin()+6);
+    std::cout<<b<<" "<<*(vec2.begin()+7)<<*(vec2.begin()+8)<<std::endl;
+    std::cout<<a<<" "<<b<<std::endl;
     // 1*10, 2*20, 3*30, 4*40, 5*50 and store the results in vec3
     std::transform(vec1.begin(), vec1.end(), vec2.begin(),
         std::back_inserter(vec3),
-        [](int x, int y) { return x * y;});
+        [](int x, int y) { return x - y;});
         
     display(vec3);
     
@@ -282,17 +286,17 @@ void test11() {
 
 int main()  {    
 
-    // test1();
-    // test2();
-    // test3();
-    // test4();
-    // test5();
+    test1();
+    test2();
+    test3();
+    test4();
+    test5();
     test6();
-    // test7();
-    // test8();
-    // test9();
-    // test10();
-    // test11();
+    test7();
+    test8();
+    test9();
+    test10();
+    test11();
     std::vector <std::string> ops(3,"");
     display(ops);
     return 0;
